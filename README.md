@@ -1,7 +1,3 @@
-Creating a comprehensive README for your project is crucial for both collaboration and deployment, as it guides users and contributors through using, understanding, and contributing to the project. Here’s a template tailored for your Rocket-based web application that incorporates Diesel for ORM and Serde for serialization/deserialization:
-
----
-
 # Rocket Web Application
 
 This Rocket web application provides a RESTful API for managing Rustaceans, a playful reference to users familiar with the Rust programming language. It uses Rocket for the web framework, Diesel as the ORM for database interactions, and Serde for serialization and deserialization of Rust structs.
