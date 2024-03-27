@@ -1,14 +1,14 @@
-use diesel::{Queryable, Insertable, AsChangeset};
-use serde::{Serialize, Deserialize};
 use crate::schema::rustaceans;
+use diesel::{AsChangeset, Insertable, Queryable};
+use serde::{Deserialize, Serialize};
 
-#[derive(Deserialize, Serialize, Queryable, AsChangeset)]
+#[derive(Serialize, Deserialize, Queryable, AsChangeset)]
 pub struct Rustacean {
-    #[serde(skip_deserializing)]
+    // #[serde(skip_deserializing)]
     pub id: i32,
     pub name: String,
     pub email: String,
-    #[serde(skip_deserializing)]
+    // #[serde(skip_deserializing)]
     pub created_at: String,
 }
 
